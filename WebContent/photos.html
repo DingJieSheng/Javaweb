@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>photos</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="photos.js"></script>
+    <style type="text/css">
+        div div div{
+            position: absolute;
+            top: 50px;
+            left:500px;
+            width: 300px;
+            height: 150px;
+        }
+        body{
+            background: url(res/photo1.jpg);
+        }
+        .stage{
+            perspective: 600px;
+        }
+        #container{
+            transform-style: preserve-3d;
+            transform-origin: center;
+            transform: rotateX(deg);
+        }
+        #img1{
+            transform-origin: center;
+            transform: translateZ(300px);
+        }
+        #img2{
+            transform-origin: center;
+            transform: translateX(300px) translateZ(150px) rotateY(60deg);
+        }
+        #img3{
+            transform-origin: center;
+            transform: translateX(300px) translateZ(-150px) rotateY(120deg);
+        }
+        #img4{
+            transform-origin: center;
+            transform: translateZ(-300px) rotateY(180deg);
+        }
+        #img5{
+            transform-origin: center;
+            transform: translateX(-300px) translateZ(-150px) rotateY(-120deg);
+        }
+        #img6{
+            transform-origin: center;
+            transform: translateX(-300px) translateZ(150px) rotateY(-60deg);
+        }
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div id="container" align="center">
+        <div id="img1" style="background: url(res/photo1.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+        <div id="img2" style="background: url(res/photo2.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+        <div id="img3" style="background: url(res/photo3.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+        <div id="img4" style="background: url(res/photo4.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+        <div id="img5" style="background: url(res/photo5.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+        <div id="img6" style="background: url(res/photo6.jpg);background-position: center;background-repeat: no-repeat;background-size: cover"></div>
+    </div>
+</div>
+</body>
+</html>

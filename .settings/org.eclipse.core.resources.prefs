@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//WebContent/fail.jsp=UTF-8
+encoding//WebContent/logout.jsp=UTF-8
+encoding//WebContent/manager.jsp=UTF-8
+encoding//WebContent/personInfo.jsp=UTF-8
+encoding//WebContent/success.jsp=UTF-8
+encoding//src/servletpackage/ManagerServlet.java=UTF-8
